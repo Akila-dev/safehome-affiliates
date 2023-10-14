@@ -22,7 +22,7 @@ const ReceiptTopBar = ({ close, title, desc }) => {
 			{title && (
 				<div className="pb-3 px-7 space-y-1 text-[--primary] text-center md:py-3 text-lg">
 					<p>{title}</p>
-					<h3 className="text-3xl font-semibold capitalize text-[--color-brand]">
+					<h3 className="text-2xl md:text-3xl font-semibold capitalize text-[--color-brand]">
 						{desc}
 					</h3>
 				</div>
