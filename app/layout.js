@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Outfit } from "next/font/google";
 import config from "./utils/config";
-import Notify from "./components/Notify";
+// import Notify from "./components/Notify";
 import Notifications from "./components/Notifications";
 import RemoteDataProvider from "./utils/RemoteDataProvider";
 
@@ -18,7 +18,7 @@ export default async function RootLayout({ children }) {
 		<html lang="en">
 			<body className={outfit.className}>
 				<RemoteDataProvider>
-					<Notify />
+					{/* <Notify /> */}
 					<Notifications />
 					{children}
 				</RemoteDataProvider>
