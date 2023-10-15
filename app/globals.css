@@ -252,3 +252,15 @@ p{
   color: var(--text)
 }
 
+.bronze{
+  background: linear-gradient(45deg, #804A00, #895E1A, #9C7A3C,#B08D57);
+}
+
+.silver{
+  background: linear-gradient(45deg, #C0C0C0 , #B1B1B1, #a2a2a2,#cfcfcf);
+}
+
+.gold{
+  background: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728,#FBF5B7);
+}
+

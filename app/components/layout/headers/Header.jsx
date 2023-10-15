@@ -9,7 +9,7 @@ import { FaRegCalendar, FaCrown } from "react-icons/fa";
 import { useUiStore } from "../../../utils/store";
 import NotificationBell from "../../NotificationBell";
 
-function Header({ user, extraClasses, title }) {
+function Header({ user }) {
 	const toggleNotifications = useUiStore((state) => state.toggleNotifications);
 
 	return (
@@ -29,8 +29,7 @@ function Header({ user, extraClasses, title }) {
 					<div className="">
 						<h1
 							className={
-								"self-center text-[--text] capitalize text-2xl md:text-3xl lg:text-4xl  font-semibold " +
-								extraClasses
+								"self-center text-[--text] capitalize text-2xl md:text-3xl lg:text-4xl  font-semibold "
 							}
 						>
 							Olawale
@@ -39,8 +38,10 @@ function Header({ user, extraClasses, title }) {
 							href="/referral_level"
 							className="flex items-center gap-1 font-medium"
 						>
-							<FaCrown className="bg-[--bronze] p-[0.25rem] text-xl rounded-full text-[#1e0700aa]" />
-							<span>Bronze</span>
+							<FaCrown
+								className={`p-[0.25rem] text-xl rounded-full text-[#1e0700aa] ${user.level.toLowerCase()}`}
+							/>
+							<span className="capitalize">{user.level}</span>
 						</Link>
 					</div>
 				</div>
