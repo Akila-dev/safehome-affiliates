@@ -3,7 +3,12 @@
 import Link from "next/link";
 import cn from "classnames";
 import { usePathname } from "next/navigation";
-import { HomeSVG, ReferralSVG, TransactionSVG } from "../../svg";
+import {
+	HomeSVG,
+	ReferralSVG,
+	TransactionSVG,
+	ReferralLevelSVG,
+} from "../../svg";
 
 const items = [
 	{
@@ -20,6 +25,11 @@ const items = [
 		name: "Transactions",
 		icon: TransactionSVG,
 		link: "/transactions",
+	},
+	{
+		name: "Level",
+		icon: ReferralLevelSVG,
+		link: "/referral_level",
 	},
 ];
 

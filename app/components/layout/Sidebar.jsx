@@ -7,7 +7,7 @@ import { BiLogOut, BiX } from "react-icons/bi";
 import cn from "classnames";
 import { usePathname } from "next/navigation";
 import Overlay from "../Overlay";
-import { HomeSVG, ReferralSVG, TransactionSVG } from "../svg";
+import { HomeSVG, ReferralSVG, TransactionSVG, ReferralLevelSVG } from "../svg";
 
 const items = [
 	{
@@ -24,6 +24,11 @@ const items = [
 		name: "Transaction History",
 		icon: TransactionSVG,
 		link: "/transactions",
+	},
+	{
+		name: "Referral Level",
+		icon: ReferralLevelSVG,
+		link: "/referral_level",
 	},
 ];
 

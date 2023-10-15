@@ -21,9 +21,11 @@
   --card-bg-1: rgba(255, 145, 0, 0.1);
   --card-bg-2: rgba(141, 64, 0, 0.1);
 
+  --bronze: #cd7f32;
+
   --text: var(--primary);
   --header: var(--color-brand);
-  --button: var(--primary)
+  --button: var(--primary);
 
 }
 
