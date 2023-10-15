@@ -10,7 +10,7 @@ import LoanImage from "../../../assets/images/icons/loan.svg";
 import ScrollLink from "../ScrollLink";
 
 const BenefitCard = ({ title, value }) => (
-	<div className="w-[120px]">
+	<div className="w-full">
 		<p className="flex items-center justify-center bg-[--b1] rounded-lg w-[120px] h-[100px] shadow-sm">
 			<FaPercentage className="text-2xl" />
 		</p>
@@ -39,14 +39,30 @@ function ReferralDetails({ level, requiredReferrals, benefits }) {
 					<h2 className="text-[1.15rem] md:text-[1.35rem] font-semibold underline underline-offset-[5px]">
 						Exclusive Benefits
 					</h2>
-					<div className="flex gap-5 md:gap-7 flex-wrap">
-						{benefits.map((benefit, i) => (
-							<BenefitCard
+					<div>
+				{/* <div className="lg:hidden pb-2 flex flex-row justify-end items-center space-x-1 px-2">
+
+						{benefits.map((_, i) => (
+							<ScrollLink
 								key={i}
-								title={benefit.title}
-								value={benefit.value}
-							/>
+								containerId={level+"scroll-indicators"}
+								activeClass="inline-block rounded-full  w-[8px] bg-[--primary] p-1 px-[7px]"
+								className="inline-block rounded-full bg-[--lines] p-1 "
+								to={level + "val" + i}
+							></ScrollLink>
 						))}
+						</div> */}
+						<div id={level+"scroll-indicators"} className="flex lg:gap-7 lg:flex-wrap overflow-x-auto whitespace-nowrap space-x-4 lg:space-x-0 no-scrollbar">
+							{benefits.map((benefit, i) => (
+								<div id={level + "val" + i}  className="w-[120px]">
+								<BenefitCard
+									key={i}
+									title={benefit.title}
+									value={benefit.value}
+								/>
+								</div>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>

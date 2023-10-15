@@ -119,7 +119,7 @@ const Page = () => {
 					<h1 className="text-[--color-brand] capitalize text-xl sm:text-2xl lg:text-3xl  font-medium">
 						Referral Levels
 					</h1>
-					<div className="space-y-5 md:space-y-7">
+					<div className="space-y-10 md:space-y-7">
 						{referralLevelsData.map((item, i) => (
 							<ReferralDetails
 								key={i}
