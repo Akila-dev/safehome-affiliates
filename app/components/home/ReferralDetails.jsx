@@ -40,26 +40,24 @@ function ReferralDetails({ level, requiredReferrals, benefits }) {
 						Exclusive Benefits
 					</h2>
 					<div>
-				{/* <div className="lg:hidden pb-2 flex flex-row justify-end items-center space-x-1 px-2">
-
-						{benefits.map((_, i) => (
-							<ScrollLink
-								key={i}
-								containerId={level+"scroll-indicators"}
-								activeClass="inline-block rounded-full  w-[8px] bg-[--primary] p-1 px-[7px]"
-								className="inline-block rounded-full bg-[--lines] p-1 "
-								to={level + "val" + i}
-							></ScrollLink>
-						))}
-						</div> */}
-						<div id={level+"scroll-indicators"} className="flex lg:gap-7 lg:flex-wrap overflow-x-auto whitespace-nowrap space-x-4 lg:space-x-0 no-scrollbar">
-							{benefits.map((benefit, i) => (
-								<div id={level + "val" + i}  className="w-[120px]">
-								<BenefitCard
+						{/* <div className="lg:hidden pb-2 flex flex-row justify-end items-center space-x-1 px-2">
+							{benefits.map((_, i) => (
+								<ScrollLink
 									key={i}
-									title={benefit.title}
-									value={benefit.value}
-								/>
+									containerId={level + "scroll-indicators"}
+									activeClass="inline-block rounded-full  w-[8px] bg-[--primary] p-1 px-[7px]"
+									className="inline-block rounded-full bg-[--lines] p-1 "
+									to={level + "val" + i}
+								></ScrollLink>
+							))}
+						</div> */}
+						<div
+							id={level + "scroll-indicators"}
+							className="flex lg:gap-7 lg:flex-wrap overflow-x-auto whitespace-nowrap space-x-4 lg:space-x-0 no-scrollbar"
+						>
+							{benefits.map((benefit, i) => (
+								<div key={i} id={level + "val" + i} className="w-[120px]">
+									<BenefitCard title={benefit.title} value={benefit.value} />
 								</div>
 							))}
 						</div>
