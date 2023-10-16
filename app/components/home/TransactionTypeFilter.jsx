@@ -7,12 +7,12 @@ import SelectField from "../../components/forms/SelectField";
 import { forwardRef } from "react";
 
 const timeMarks = [
-	{ value: "last_1_day", name: "Last 1 day" },
-	{ value: "last_7_days", name: "Last 7 days" },
-	{ value: "last_14_days", name: "Last 14 days" },
+	{ value: "all", name: "All Transactions" },
+	{ value: "withdrawal", name: "Withdrawal" },
+	{ value: "referral_fee", name: "Referral Fee" },
 ];
 
-export default function LastNTime() {
+export default function TransactionTypeFilter() {
 	return (
 		<SelectField
 			items={timeMarks}
