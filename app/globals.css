@@ -267,6 +267,9 @@ p{
 .gray-sm{
   @apply bg-gradient-to-br from-[#f9f9f9] to-[#fdfdfd]  md:from-[#fff] md:to-[#fff]
 }
+.gray{
+  @apply bg-gradient-to-br from-[#efefef] to-[#eaeaea] 
+}
 
 .bronze, .silver, .gold{
   @apply shadow

@@ -1,6 +1,7 @@
 "use client";
 
 // import { useState } from "react";
+import { authenticatedUser } from "../../utils/userData";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import { FaRegCalendar } from "react-icons/fa";
 import OverviewCard from "../../components/home/OverviewCard";
@@ -24,12 +25,6 @@ const referralsData = [
 		name: "Francis Drake",
 	},
 ];
-
-const authenticatedUser = {
-	firstName: "Godspower",
-	avatarUrl: "https://i.pravatar.cc/150?u=helios@g.com",
-	level: "bronze",
-};
 
 const Page = () => {
 	return (

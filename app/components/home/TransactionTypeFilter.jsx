@@ -25,7 +25,7 @@ export default function TransactionTypeFilter() {
 					<div
 						ref={ref}
 						{...props}
-						className="flex  cursor-pointer justify-start text-[--text-secondary] items-center space-x-2 text-sm"
+						className="flex  cursor-pointer justify-start text-[--text-secondary] items-center gap-2 text-[0.8rem] lg:text-sm text-center"
 					>
 						<span className="font-medium self-center">
 							{_selectedItem?.name ?? timeMarks[0].name}

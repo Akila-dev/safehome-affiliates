@@ -1,6 +1,7 @@
 "use client";
 
 // import { useState } from "react";
+import { authenticatedUser } from "../../utils/userData";
 import Image from "next/image";
 import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 import { FaRegCalendar, FaCrown } from "react-icons/fa";
@@ -62,12 +63,6 @@ const referralLevelsData = [
 		],
 	},
 ];
-
-const authenticatedUser = {
-	firstName: "Godspower",
-	avatarUrl: "https://i.pravatar.cc/150?u=helios@g.com",
-	level: "bronze",
-};
 
 const Page = () => {
 	return (

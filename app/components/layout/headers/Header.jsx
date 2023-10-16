@@ -26,7 +26,7 @@ function Header({ user }) {
 							className="rounded-full object-contain "
 						/>
 					</div>
-					<div className="">
+					<div className="w-auto">
 						<h1
 							className={
 								"self-center text-[--text] capitalize text-2xl md:text-3xl lg:text-4xl  font-semibold "
@@ -34,15 +34,19 @@ function Header({ user }) {
 						>
 							Olawale
 						</h1>
-						<Link
-							href="/referral_level"
-							className="flex items-center gap-1 font-medium"
-						>
-							<FaCrown
-								className={`p-[0.25rem] text-xl rounded-full text-[#1e0700aa] ${user.level.toLowerCase()}`}
-							/>
-							<span className="capitalize">{user.level}</span>
-						</Link>
+						<div className="w-auto">
+							<Link
+								href="/referral_level"
+								className="flex items-center gap-1 font-medium w-[85px] gray shadow rounded-[1rem] px-[5px] py-[3px]"
+							>
+								<FaCrown
+									className={`p-[0.25rem] text-[1.2rem] md:text-xl rounded-full text-[#1e0700aa] ${user.level.toLowerCase()}`}
+								/>
+								<span className="capitalize text-[0.82rem] md:text-sm">
+									{user.level}
+								</span>
+							</Link>
+						</div>
 					</div>
 				</div>
 
