@@ -265,7 +265,7 @@ p{
 }
 
 .gray-sm{
-  @apply bg-gradient-to-br from-[#fafafa] to-[#fdfdfd]  md:from-[#fff] md:to-[#fff]
+  @apply bg-gradient-to-br from-[#f9f9f9] to-[#fdfdfd]  md:from-[#fff] md:to-[#fff]
 }
 
 .bronze, .silver, .gold{
