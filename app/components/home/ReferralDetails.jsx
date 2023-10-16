@@ -38,7 +38,7 @@ function ReferralDetails({ level, requiredReferrals, benefits }) {
 		<GiCash key={5} className="text-4xl" />,
 	];
 	return (
-		<section className="bg-[--b1] md:bg-white rounded-brand  px-4 py-5 md:p-8 space-y-4 lg:space-y-8">
+		<section className="gray-sm rounded-brand  px-4 py-5 md:p-8 space-y-4 lg:space-y-8">
 			<div className="space-y-5">
 				<p className="flex items-center gap-2 text-xl font-medium capitalize">
 					<FaCrown

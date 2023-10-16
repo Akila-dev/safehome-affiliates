@@ -264,6 +264,10 @@ p{
   background: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728,#FBF5B7);
 }
 
+.gray-sm{
+  @apply bg-gradient-to-br from-[#fbfbfb] to-[#fefefe]  md:from-[#fff] md:to-[#fff]
+}
+
 .bronze, .silver, .gold{
   @apply shadow
 }
