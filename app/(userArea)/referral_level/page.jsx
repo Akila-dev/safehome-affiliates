@@ -44,10 +44,10 @@ const referralLevelsData = [
 		requiredReferrals: 100,
 		benefits: [
 			{ title: "referral fee", value: "40% (₦2,000)" },
-			{ title: "referral bonus", value: "₦20,000" },
-			{ title: "level bonus", value: "₦20,000" },
-			{ title: "accumulated bonus", value: "₦0" },
-			{ title: "total level earnings", value: "₦40,000" },
+			{ title: "referral bonus", value: "₦200,000" },
+			{ title: "level bonus", value: "₦100,000" },
+			{ title: "accumulated bonus", value: "₦20,000" },
+			{ title: "total level earnings", value: "₦320,000" },
 		],
 	},
 	{
@@ -55,10 +55,10 @@ const referralLevelsData = [
 		requiredReferrals: 250,
 		benefits: [
 			{ title: "referral fee", value: "40% (₦2,000)" },
-			{ title: "referral bonus", value: "₦20,000" },
-			{ title: "level bonus", value: "₦20,000" },
-			{ title: "accumulated bonus", value: "₦0" },
-			{ title: "total level earnings", value: "₦40,000" },
+			{ title: "referral bonus", value: "₦500,000" },
+			{ title: "level bonus", value: "₦250,000" },
+			{ title: "accumulated bonus", value: "₦120,000" },
+			{ title: "total level earnings", value: "₦870,000" },
 		],
 	},
 ];
