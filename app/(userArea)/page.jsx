@@ -49,22 +49,22 @@ const Page = () => {
 					<ReferralHistory data={referralsData} />
 				</section>
 
-				<section className="bg-white rounded-brand  md:p-8 space-y-4">
-					<div className="flex flex-row justify-between items-center">
-						<div className="flex flex-col md:flex-row justify-start md:items-center md:gap-8 lg:gap-16 md:pb-1">
+				<section className="bg-white rounded-brand  md:p-8 space-y-4 w-full">
+					<div className="w-full">
+						<div className="w-full flex flex-col lg:flex-row justify-between lg:items-center lg:gap-16 lg:pb-1">
 							<h1 className="text-[--color-brand] capitalize text-xl sm:text-2xl lg:text-2xl  font-medium">
 								Transactions
 							</h1>
-							<div className="flex items-center gap-3 lg:gap-5 w-full max-w-full text-[0.7rem] lg:text-base">
-								<div>
+							<div className="flex flex-wrap lg:justify-end items-center gap-3 lg:gap-5 w-full max-w-full text-sm lg:text-base">
+								<div className="py-2">
 									<LastNTime />
 								</div>
-								<div>
+								<div className="py-2">
 									<TransactionTypeFilter />
 								</div>
-								<button className="lg:bg-[--b1] border border-[--button] lg:border-0 rounded-lg lg:rounded-[1.1rem] flex gap-3 px-2 lg:px-6 items-center py-2">
+								<button className="lg:bg-[--b1] border border-[--button] lg:border-0 rounded-lg lg:rounded-[1.1rem] flex gap-1 lg:gap-3 px-2 lg:px-6 items-center py-2">
 									<BsFilterRight className="text-xl" />
-									<span className="hidden lg:block">Filter</span>
+									<span className="block">Filter</span>
 								</button>
 							</div>
 						</div>

@@ -25,7 +25,7 @@ export default function TransactionTypeFilter() {
 					<div
 						ref={ref}
 						{...props}
-						className="flex  cursor-pointer justify-start text-[--text-secondary] items-center gap-2 text-[0.8rem] lg:text-sm text-center"
+						className="flex  cursor-pointer justify-start text-[--text-secondary] items-center gap-2 text-sm text-center"
 					>
 						<span className="font-medium self-center">
 							{_selectedItem?.name ?? timeMarks[0].name}
@@ -46,7 +46,7 @@ export default function TransactionTypeFilter() {
 					<div
 						ref={ref}
 						{...props}
-						className={`absolute rounded-brand min-w-max bg-white mt-1 shadow-md max-h-80 overflow-y-auto p-0 z-10 ${
+						className={`absolute rounded-brand min-w-max bg-white mt-1 shadow-md max-h-80 overflow-y-auto p-0 z-10 text-sm ${
 							!_isOpen && "hidden"
 						}`}
 					>
@@ -54,7 +54,7 @@ export default function TransactionTypeFilter() {
 							return (
 								<div
 									key={`${item.value}${index}`}
-									className={`px-4 py-2 whitespace-nowrap text-[--text-secondary] hover:bg-gray-50 cursor-pointer ${
+									className={`px-4 py-2 whitespace-nowrap text-[--text-secondary] hover:bg-gray-50 cursor-pointer text-sm ${
 										_highlightedIndex === index && "bg-gray-50"
 									}`}
 									{..._itemProps({ item, index })}
