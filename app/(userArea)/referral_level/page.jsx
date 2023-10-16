@@ -74,7 +74,7 @@ const Page = () => {
 		<div className="space-y-5  md:space-y-8 w-full min-h-screen pb-16">
 			{/* <HeaderAlt user={authenticatedUser} /> */}
 
-			<main className="pb-7 md:pb-0 space-y-10 md:space-y-5 lg:space-y-10">
+			<main className="pb-7 md:pb-0 space-y-8 md:space-y-5 lg:space-y-10">
 				<section className="space-y-7 md:space-y-10">
 					<div className="bg-white rounded-brand  md:p-8 space-y-4">
 						<div className="flex flex-row justify-between items-center">
@@ -119,7 +119,7 @@ const Page = () => {
 					{/* <h1 className="text-[--color-bran] capitalize text-2xl sm:text-3xl lg:text-3xl  font-semibold">
 						Referral Levels
 					</h1> */}
-					<div className="space-y-10 md:space-y-7">
+					<div className="space-y-6 md:space-y-7">
 						{referralLevelsData.map((item, i) => (
 							<ReferralDetails
 								key={i}
