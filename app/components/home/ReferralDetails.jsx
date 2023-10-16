@@ -16,9 +16,9 @@ import ScrollLink from "../ScrollLink";
 
 const BenefitCard = ({ title, value, icon }) => (
 	<div className="w-full space-y-3">
-		<p className="flex flex-col gap-2 items-center justify-center bg-white md:bg-[--b1] rounded-lg w-[120px] h-[100px] shadow-sm">
+		<p className="flex flex-col gap-3 items-center justify-center bg-white md:bg-[--b1] rounded-lg w-[120px] h-[110px] shadow-sm">
 			{/* <GiCash className="text-4xl" /> */}
-			{icon}
+			<div className="pt-3">{icon}</div>
 			<span className="font-semibold">{value}</span>
 		</p>
 		{/* <p className="flex items-center justify-center bg-[--b1] rounded-lg w-[120px] h-[100px] shadow-sm">
