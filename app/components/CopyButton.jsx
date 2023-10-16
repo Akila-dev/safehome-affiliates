@@ -17,11 +17,11 @@ const CopyButton = ({ link, type, additionalClasses }) => {
 	return (
 		<div className={`${additionalClasses} w-auto`}>
 			<button
-				className="rounded-[1.3rem] bg-[--lines] pl-3 lg:pl-7 xl:space-x-7 flex items-center justify-between lg:w-full font-semibold gap-3 md:gap-5"
+				className="rounded-[1.3rem] bg-[--lines] pl-3 lg:pl-7 xl:space-x-7 flex items-center justify-between max-w-full lg:w-full font-semibold gap-3 md:gap-5"
 				onClick={() => copy(link)}
 			>
 				<p
-					className={`font-light truncate ${
+					className={`font-light truncate w-full ${
 						type === "link" ? "text-[0.75rem] md:text-sm" : "text-sm"
 					}`}
 				>

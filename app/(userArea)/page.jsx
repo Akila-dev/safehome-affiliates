@@ -39,10 +39,14 @@ const Page = () => {
 					<CopyButton
 						link="https://www.google.com/"
 						type="link"
-						additionalClasses=""
+						additionalClasses="max-w-full"
 					/>
 					<h3 className="font-bold">OR</h3>
-					<CopyButton link="ITEHHOH" type="code" additionalClasses="" />
+					<CopyButton
+						link="ITEHHOH"
+						type="code"
+						additionalClasses="max-w-full"
+					/>
 				</div>
 
 				<section className="bg-white rounded-brand md:p-8 space-y-4">
@@ -62,7 +66,7 @@ const Page = () => {
 								<div className="py-2">
 									<TransactionTypeFilter />
 								</div>
-								<button className="lg:bg-[--b1] border border-[--button] lg:border-0 rounded-lg lg:rounded-[1.1rem] flex gap-1 lg:gap-3 px-2 lg:px-6 items-center py-2">
+								<button className="bg-[--b1] border border-[--lines] lg:border-0 rounded-lg lg:rounded-[1.1rem] flex gap-1 lg:gap-3 px-2 lg:px-6 items-center py-2">
 									<BsFilterRight className="text-xl" />
 									<span className="block">Filter</span>
 								</button>
