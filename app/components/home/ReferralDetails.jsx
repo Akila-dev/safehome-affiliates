@@ -1,9 +1,9 @@
 "use client";
 
 import { FaPercentage, FaCrown } from "react-icons/fa";
-import { FaRegHandshake } from "react-icons/fa6";
+import { FaRegHandshake, FaCoins } from "react-icons/fa6";
 import { GiCash } from "react-icons/gi";
-import { GrMoney } from "react-icons/gr";
+import { LiaCoinsSolid } from "react-icons/lia";
 import { MdAutoGraph } from "react-icons/md";
 import { PiHandCoinsFill } from "react-icons/pi";
 
@@ -18,7 +18,10 @@ const BenefitCard = ({ title, value, icon }) => (
 	<div className="w-full space-y-3">
 		<p className="flex flex-col gap-3 items-center justify-center bg-white md:bg-[--b1] rounded-lg w-[120px] h-[110px] shadow-sm">
 			{/* <GiCash className="text-4xl" /> */}
-			<div className="pt-3">{icon}</div>
+			{/* <div className="pt-3 bg-gradient-to-r from-[#ff9100] to-[#bc411f] text-[rgba(0,0,0,0)] bg-clip-text">
+				{icon}
+			</div> */}
+			<span className="pt-3 !text-[--color-brand]">{icon}</span>
 			<span className="font-semibold">{value}</span>
 		</p>
 		{/* <p className="flex items-center justify-center bg-[--b1] rounded-lg w-[120px] h-[100px] shadow-sm">
@@ -34,7 +37,7 @@ function ReferralDetails({ level, requiredReferrals, benefits }) {
 		<FaRegHandshake key={1} className="text-4xl" />,
 		<PiHandCoinsFill key={2} className="text-4xl" />,
 		<MdAutoGraph key={3} className="text-4xl" />,
-		<GrMoney key={4} className="text-3xl" />,
+		<LiaCoinsSolid key={4} className="text-4xl" />,
 		<GiCash key={5} className="text-4xl" />,
 	];
 	return (
@@ -57,7 +60,7 @@ function ReferralDetails({ level, requiredReferrals, benefits }) {
 						Exclusive Benefits
 					</h2>
 					<div className="space-y-1">
-						<div className="lg:hidden pb-2 flex flex-row justify-end items-center space-x-1 px-2">
+						{/* <div className="lg:hidden pb-2 flex flex-row justify-end items-center space-x-1 px-2">
 							{benefits.map((_, i) => (
 								<ScrollLink
 									key={i}
@@ -67,7 +70,7 @@ function ReferralDetails({ level, requiredReferrals, benefits }) {
 									to={level + "val" + i}
 								></ScrollLink>
 							))}
-						</div>
+						</div> */}
 
 						<div
 							id={level + "scroll-indicators"}
